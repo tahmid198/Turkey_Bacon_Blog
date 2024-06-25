@@ -47,6 +47,8 @@ function login(loginData) {
     });
 }
 
+
+// Function that allows a new user to register for a profile
 function register(registerData) {
   // POST /api/users
   const options = {

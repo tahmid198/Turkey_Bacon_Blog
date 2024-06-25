@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Global CSS (CSS rules you want applied to all pages) -->
+    <link rel="stylesheet" href="global.css" />
+
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Microblog Network</title>
+    <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
+    <script src="auth.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="postlink" href="../posts/posts.html">Post</a>
+        <button id="logoutlink" onclick="logout()">Logout</button>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Profile</h1>
+      <div id="profile">
+          <div>
+              <label>Username: </label>
+              <span id="username"></span>
+          </div>
+          <div>
+              <label>Full Name: </label>
+              <span id="fullname"></span>
+          </div>
+          <div>
+              <label>Bio: </label>
+              <span id="bio"></span>
+          </div>
+          <div>
+              <label>Member Since: </label>
+              <span id="createdAt"></span>
+          </div>
+      </div>
+  </main>
+
+    <footer></footer>
+
+    <!-- Page-specific code -->
+    <script src="profile.js"></script>
+  </body>
+</html>
