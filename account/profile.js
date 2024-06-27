@@ -13,8 +13,7 @@ function getProfile(username) {
         // This is required for endpoints expecting us to send
         // JSON data.
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}` // Include the token in the Authorization header
-
+        "Authorization": `Bearer ${token}`
       },
     };
   
